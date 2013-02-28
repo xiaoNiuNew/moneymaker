@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.leonlong.android.moneymaker"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="org.leonlong.android.moneymaker.activity.MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.OfferDescActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+
+        <!-- AD START -->
+        <!-- 万普 -->
+        <activity
+            android:name="cn.waps.OffersWebView"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 以下属性为应用ID,从万普后台获取 -->
+        <meta-data
+            android:name="WAPS_ID"
+            android:value="76951570c1552d70f576716db1b913b3" />
+        <!-- 以下属性为分发渠道ID,编码表参见本文档末附表 -->
+        <meta-data
+            android:name="WAPS_PID"
+            android:value="WAPS" />
+
+        <!-- 大头鸟 -->
+        <activity
+            android:name="com.datouniao.AdPublisher.AdsOffersWebView"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <service android:name="com.datouniao.AdPublisher.AdsService" >
+            <intent-filter>
+                <action android:name="com.datouniao.AdPublisher.AdsService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="DTN_APP_ID"
+            android:value="c96941f4-8bd9-4b67-b7bd-4ec8e97dbc5c" />
+        <meta-data
+            android:name="DTN_SECRET_KEY"
+            android:value="snbfxkbrxias" />
+        <!-- 渠道标识 -->
+        <meta-data
+            android:name="DTN_PLACE_ID"
+            android:value="DTN" />
+
+        <!-- 趣米 -->
+        <activity
+            android:name="com.ctsxa.mean.QMOfsActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 米迪 -->
+        <activity
+            android:name="net.miidi.ad.wall.AdWallActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <!-- 点乐 -->
+        <activity
+            android:name="com.dlnetwork.DianleOfferActivity"
+            android:configChanges="keyboardHidden|orientation" />
+
+        <service android:name="com.dlnetwork.DianleOfferHelpService" />
+
+        <!-- 易积分 -->
+        <!-- 注册墙Activity -->
+        <activity
+            android:name="com.emar.escore.sdk.show.ShowWallActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 注册详情Activity -->
+        <activity
+            android:name="com.emar.escore.sdk.show.DetailActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 注册网页Activity -->
+        <activity
+            android:name="com.emar.escore.sdk.show.WebActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <!-- 应用编号  由易积分平台添加 应用时自动生成 查看详情可见 777 -->
+        <meta-data
+            android:name="YJF_APP_ID"
+            android:value="208" />
+        <!-- 应用密钥  由易积分平台添加 应用时自动生成 查看详情可见   QIANCHIANDEMARDEZIJIRENZHANGHAO -->
+        <meta-data
+            android:name="YJF_APP_KEY"
+            android:value="EMRXWIV4DUNHTEEWO9M7IH7ZW1PVI4N9GE" />
+        <!-- 开发者ID  由易积分平台添加 应用时自动生成 查看详情可见  888 -->
+        <meta-data
+            android:name="YJF_DEV_ID"
+            android:value="21" />
+        <!-- 渠道号 开发者为自己应用在不同平台推广的标识参数  自定义6-20位字符串 yjf_adwall_v2.0.1 -->
+        <meta-data
+            android:name="YJF_APP_CHANNEL"
+            android:value="sdk 3.0.0" />
+
+        <!-- 桔子 -->
+        <meta-data
+            android:name="JUZI_APPID"
+            android:value="5126eca2-13c8-4a56-a1d9-19be7250b239" />
+        <meta-data
+            android:name="MARKET_ID"
+            android:value="juzi" />
+        <!-- 物品墙 -->
+        <activity
+            android:name="com.juzi.main.TheAdVirtualGoods"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 浏览器 -->
+        <activity
+            android:name="com.juzi.main.WebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 根据需要调整，选择横屏或竖屏 -->
+        <activity
+            android:name="com.juzi.main.DownManagement"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <!-- AD END -->
+
+    </application>
+
+</manifest>

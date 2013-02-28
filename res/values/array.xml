@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="functions">
+        <item>欢迎，游客9527</item>
+        <item>首页</item>
+        <item>积分兑换</item>
+        <item>个人账户</item>
+        <item>推荐好友</item>
+        <item>帮助</item>
+        <item>反馈</item>
+    </string-array>
+    <string-array name="money_areas">
+        <item>金钱一区——金蛇狂舞</item>
+        <item>金钱二区——金榜题名</item>
+        <item>金钱三区——金戈铁马</item>
+        <item>金钱四区——金城千里</item>
+        <item>金钱五区——金门绣户</item>
+        <item>金钱六区——金光盖地</item>
+        <item>金钱七区——金石不渝</item>
+        <item>金钱八区——金昭玉粹</item>
+        <item>金钱九区——金台市骏</item>
+        <item>金钱十区——金章紫绶</item>
+    </string-array>
+
+    <!--
+    <string-array name="money_areas">
+        <item>金蛇狂舞</item>
+        <item>金榜题名</item>
+        <item>金戈铁马</item>
+        <item>金城千里</item>
+        <item>金门绣户</item>
+        <item>金光盖地</item>
+        <item>金石不渝</item>
+        <item>金昭玉粹</item>
+        <item>金台市骏</item>
+        <item>金章紫绶</item>
+    </string-array>
+    -->
+    <string-array name="money_areas_desc">
+        <item>金蛇狂舞金钱区，当前拥有超过80个赚钱广告，价值高达8000多金钱。不定期更新。</item>
+        <item>金榜题名金钱区，当前拥有超过30个赚钱广告，价值高达3000多金钱。不定期更新。</item>
+        <item>金戈铁马金钱区，当前拥有超过40个赚钱广告，价值高达4000多金钱。不定期更新。</item>
+        <item>金城千里金钱区，当前拥有超过20个赚钱广告，价值高达2000多金钱。不定期更新。</item>
+        <item>金门绣户金钱区，当前拥有超过20个赚钱广告，价值高达2000多金钱。不定期更新。</item>
+        <item>金光盖地金钱区，当前拥有超过20个赚钱广告，价值高达2000多金钱。不定期更新。</item>
+        <item>金石不渝金钱区，当前拥有超过25个赚钱广告，价值高达2500多金钱。不定期更新。</item>
+        <item>金昭玉粹金钱区，当前拥有超过21个赚钱广告，价值高达2100多金钱。不定期更新。</item>
+        <item>金台市骏金钱区，当前拥有超过25个赚钱广告，价值高达2500多金钱。不定期更新。</item>
+        <item>金章紫绶金钱区，当前拥有超过30个赚钱广告，价值高达3000多金钱。不定期更新。</item>
+    </string-array>
+
+</resources>
