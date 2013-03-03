@@ -25,7 +25,7 @@ import com.emar.escore.sdk.util.c;
 import com.emar.escore.sdk.widget.UpdateScordNotifier;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
-
+//hello this miao!
 public class MainActivity extends SlidingFragmentActivity implements
 		QuMiEarnPointsNotify, UpdateScordNotifier {
 
